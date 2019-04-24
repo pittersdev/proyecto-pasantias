@@ -1,0 +1,23 @@
+.Media {
+  cursor: pointer;
+  margin-right: 15px;
+  display: inline-block;
+
+  vertical-align: top;
+  margin: 25px , 25px , 25px;
+}
+
+
+.Media-cover {
+  transition: .3s;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+  height: 40px;
+}
+
+.Media-image {
+
+  font-size: 0.5em;
+  padding: 2em;
+  cursor: pointer;
+
+}
