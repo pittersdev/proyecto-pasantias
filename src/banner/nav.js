@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Suport from  '../suport';
-import Markets from '../markets';
+import MarketsContainer from '../markets/markets-container';
 import Grafits from '../grafits/index.js';
 import Home from    '../home.js';
 import './nav.css'
@@ -18,7 +18,7 @@ const Nav = (props) => {
             <Link className="banner-bottom" to="/suport">Suport</Link>
           </div>
           <Switch>
-            <Route path="/markets" component={Markets} />
+            <Route path="/markets" component={MarketsContainer}/>
             <Route path="/grafits" component={Grafits} />
             <Route path="/suport" component={Suport} />
             <Route path="/" component={Home} />

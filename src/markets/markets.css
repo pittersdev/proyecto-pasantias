@@ -1,0 +1,21 @@
+.col {
+    height: 30px;
+    left: 0px;
+   
+    top: 0px;
+    width: 1198px;
+    overflow: hidden;
+    padding-right: 0px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    color: rgb(51, 51, 51);;
+}
+
+.row{
+    width: auto;
+    height: 4380px;
+    max-width: 1200px;
+    max-height: 4380px;
+    overflow: hidden;
+    position: relative;
+}

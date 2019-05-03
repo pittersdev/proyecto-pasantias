@@ -1,76 +1,76 @@
 import React, { Component } from 'react';
-import axios from 'axios'
-
-
+import './markets.css';
+import Table from 'react-bootstrap/Table'
 class MarketsContainer extends Component{
-
+  
   constructor(props) {
     super();
       this.state = {
-        items: [],
-        isLoaded: false,
-      };
- 
+        data: [],
+      };  
 }
 
-  _getTickerBySymbol(data) {
-        let ticker = {}
-        data.forEach(item => {
-            let symbol = item.symbol || item.s;
-            ticker[symbol] = {
-                symbol: symbol,
-                lastPrice: item.lastPrice || item.c,
-                priceChange: item.priceChange || item.p,
-                priceChangePercent: item.priceChangePercent || item.P,
-                highPrice: item.highPrice || item.h,
-                lowPrice: item.lowPrice || item.l,
-                quoteVolume: item.quoteVolume || item.q,
-            }
-        })
-        return ticker;
-        
-    }
 
+ 
 
 componentDidMount(){
 
-    fetch('https://api.binance.com/api/v1/time')
-
-        .then(res => res.json())
-        .then(json => {
-              this.setState({
-                isLoaded: true, 
-                items: json,
-                
-              })
-              debugger
-      
-        });
-        
-        
+  //return fetch('http://192.168.0.100:4440/24h')
+  return fetch('https://api.binance.com/api/v1/ticker/24hr')
+            
+             .then((response) => response.json())
+             .then((responseJson) => {
+               console.log(responseJson);      
+                this.setState({
+                 data: responseJson  
+               })
+             })
+             .catch((error) => {
+               if(error === 'TypeError: Network request failed'){
+                 console.log('error internet');
+               }
+               console.error(error);
+             });      
 }
-
+ 
 
   render(){
-    let { isLoaded , items } = this.state;
-    if(!isLoaded){
-      return <div>Loading...</div>
-    }
-    else {
-
-    
-        return(
+   //var {  datas  } = this.state;
+   // if(!isLoaded){
+   //   return <div>Loading...</div>
+   // }
+    return(
+       
           <div>
-            <ul>
-              {items.map(item => (
-                <li>
-                 symbols: {item.symbols}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )
-    }
+          
+            <Table responsive>
+              <thead>
+                <tr>
+                  <th>Pair</th>
+                  <th>Last Price</th>
+                  <th>24h Change</th>
+                  <th>24h High</th>
+                  <th>24h Low</th>
+                  <th>24h Volume</th>
+                </tr>
+              </thead>
+              <tbody>
+                {this.state.data.map(item => (
+                  <tr key={item.symbol}>
+                    <td>{item.symbol}</td>
+                    <td>{item.lastPrice}</td>
+                    <td>{item.priceChangePercent}%</td>
+                    <td>{item.highPrice}</td>
+                    <td>{item.lowPrice}</td>
+                    <td>{item.quoteVolume}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+        </div>
+      
+    )
+    
   }
 }
 

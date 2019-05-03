@@ -1,16 +1,18 @@
 
-import './footer.css'
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
+import CardDeck from 'react-bootstrap/CardDeck';
 
 const Footer = () => {
   return (
+
     <MDBFooter color="stylish-color-dark" className="page-footer font-small pt-4 mt-4">
-      <MDBContainer fluid className="text-center text-md-left">
-        <MDBRow>
+      <MDBContainer fluid className="text-center text-md-left" className="">
+      <CardDeck>
+     
           <MDBCol md="6">
             <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
               Footer Content
@@ -23,7 +25,8 @@ const Footer = () => {
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
           <MDBCol md="2">
-            <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
+          
+          <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
               Links
             </h5>
             <ul className="list-unstyled">
@@ -80,12 +83,13 @@ const Footer = () => {
                 <a href="#!">Link 4</a>
               </li>
             </ul>
-          </MDBCol>
-        </MDBRow>
+            </MDBCol>
+          
+            
+          </CardDeck>
+         
       </MDBContainer>
-      
-      
-      <hr />
+     <hr/>
       <div className="text-center">
         <ul className="list-unstyled list-inline">
           <li className="list-inline-item">
@@ -117,7 +121,7 @@ const Footer = () => {
       </div>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.Tecnoparaguana.com"> TecnoParaguana.com </a>
+          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
         </MDBContainer>
       </div>
     </MDBFooter>

@@ -1,15 +1,14 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table'
 
-import MarketsContainer from './markets-container.js';
-function Markets() {
-
-
-
-
+function TableMarket(props) {
+  let data = props.data;
+  
+  
+ 
+  
   return(
     <div>
-    <MarketsContainer/>
       <Table responsive>
         <thead>
           <tr>
@@ -25,7 +24,7 @@ function Markets() {
         <tbody>
           <tr>
             <td>1</td>
-            <td>Table cell</td>
+            <td>table cell</td>
             <td>Table cell</td>
             <td>Table cell</td>
             <td>Table cell</td>
@@ -56,4 +55,4 @@ function Markets() {
 
   );
 }
-export default Markets;
+export default TableMarket;
