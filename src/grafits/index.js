@@ -5,7 +5,6 @@ const Grafits = (props) => {
   return (
     <div>
       <Related/>
-      <h1> vista Grafits </h1>
     </div>
   )
 }

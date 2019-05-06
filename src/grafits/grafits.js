@@ -1,14 +1,15 @@
 import React from 'react';
 import "./grafits.css";
+import TradingViewWidget, { Themes } from 'react-tradingview-widget';
 
-function Related (props) {
-  return(
-  <div>
-      <div className="Related" >
-        <img src="./images/carousel1.jpg" width ={250} alt=""/>
-      </div>
-  </div>
-  )
-}
+const Related = () => (
+  <TradingViewWidget 
+  symbol="NASDAQ:AAPL" 
+  theme={Themes.DARK}
+  locale="fr"
+  
+ 
+  />
+);
 
 export default Related;
