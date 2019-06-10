@@ -9,10 +9,6 @@ class MarketsContainer extends Component{
         data: [],
       };  
 }
-
-
- 
-
 componentDidMount(){
 
   //return fetch('http://192.168.0.100:4440/24h')
@@ -25,26 +21,36 @@ componentDidMount(){
                  data: responseJson  
                })
              })
+             
              .catch((error) => {
                if(error === 'TypeError: Network request failed'){
                  console.log('error internet');
                }
                console.error(error);
-             });      
+             });  
 }
- 
+
+
+//onChange = e => {
+//  this.setState ({ data: e.target.value})
+//}
+  
+
 
   render(){
-   //var {  datas  } = this.state;
+  // var {  data  } =  data.filter(dat => dat.symbol === 0);
    // if(!isLoaded){
    //   return <div>Loading...</div>
    // }
+   
+ 
     return(
        
           <div>
           
             <Table responsive>
               <thead>
+                <input label ="escribe aqui:" icon="search" onChange={this.onChange}></input>
                 <tr>
                   <th>Pair</th>
                   <th>Last Price</th>
@@ -55,16 +61,18 @@ componentDidMount(){
                 </tr>
               </thead>
               <tbody>
-                {this.state.data.map(item => (
-                  <tr key={item.symbol}>
-                    <td>{item.symbol}</td>
-                    <td>{item.lastPrice}</td>
-                    <td>{item.priceChangePercent}%</td>
-                    <td>{item.highPrice}</td>
-                    <td>{item.lowPrice}</td>
-                    <td>{item.quoteVolume}</td>
-                  </tr>
+                   {this.state.data.map(item => ( 
+                   <tr key={item.symbol}>
+                     <td>{item.symbol}</td>
+                     <td>{item.lastPrice}</td>
+                     <td>{item.priceChangePercent}%</td>
+                     <td>{item.highPrice}</td>
+                     <td>{item.lowPrice}</td>
+                     <td>{item.quoteVolume}</td>
+                   </tr>
+                
                 ))}
+                
               </tbody>
             </Table>
         </div>

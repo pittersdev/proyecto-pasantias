@@ -1,6 +1,7 @@
 .images-carousel{
-
-	height: 450px;
+	scroll-margin-block:   20px;
+	height: 600px;
 	width: 100%;
+	
 
 }

@@ -2,11 +2,8 @@ import React from 'react'
 import Table from 'react-bootstrap/Table'
 
 function TableMarket(props) {
-  let data = props.data;
   
-  
- 
-  
+
   return(
     <div>
       <Table responsive>

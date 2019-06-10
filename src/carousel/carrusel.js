@@ -13,13 +13,12 @@ class Carousel extends React.Component {
       speed: 500,
       slidesToSw: 1,
       slidesToScroll: 1,
-      height: 500,
       width: 100
     };
     return (
       <Slider {...props}>
         <div>
-          <img className="images-carousel" src="./images/carousel1.jpg"alt=""/>
+          <img className="images-carousel" src="./images/prueba1.jpeg"alt=""/>
         </div>
         <div>
           <img className="images-carousel" src="./images/carousel2.jpg" alt=""/>

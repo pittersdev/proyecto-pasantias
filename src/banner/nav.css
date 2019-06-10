@@ -1,8 +1,8 @@
 
 .banner {
-    background: #060046;
-    padding: 2px;
-
+    background:#031227;
+    padding: 20px;
+   
 
 }
 
@@ -30,7 +30,7 @@
 
 
 .banner-bottom {
-    display: inline-block;
+    
     font-size: 0.8em;
     padding: 2em;
     cursor: pointer;

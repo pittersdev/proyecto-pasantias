@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './price-row.css';
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
-class PriceRow extends Component {
+class priceRow extends Component {
 
   constructor(props) {
     super();
@@ -13,7 +13,7 @@ class PriceRow extends Component {
 }
 componentDidMount(){
 
-  //return fetch('http://192.168.0.100:4440/24h')
+  //return fetch('http://192.168.0.100:4000/24h')
   return fetch('https://api.binance.com/api/v1/ticker/24hr')
             
              .then((response) => response.json())
@@ -21,7 +21,6 @@ componentDidMount(){
                console.log(responseJson)      
                 this.setState({
                 pricerow: responseJson
-                 
                })
                
              })
@@ -36,7 +35,7 @@ componentDidMount(){
 
 
   render(){
-
+    
     return(
         <CardDeck>
           <Card>
@@ -44,8 +43,8 @@ componentDidMount(){
             <Card.Body>
               <Card.Title>BTC/ETH</Card.Title>
               <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.
+                price 0.03145 <hr/>
+                volume 7111.4218
               </Card.Text>
             </Card.Body>
           
@@ -55,8 +54,8 @@ componentDidMount(){
             <Card.Body>
               <Card.Title>BTC/USDT</Card.Title>
               <Card.Text>
-                This card has supporting text below as a natural lead-in to additional
-                content.{this.state.lasPice}
+                price 0.03145 <hr/>
+                volumen 7.111.4218
               </Card.Text>
             </Card.Body>
            
@@ -66,9 +65,8 @@ componentDidMount(){
             <Card.Body>
               <Card.Title>BTC/XRP</Card.Title>
               <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to
-                additional content. This card has even longer content than the first to
-                show that equal height action.
+                Price 0.0002145 <hr/>
+                Volumen 4.454.675
               </Card.Text>
             </Card.Body>
           </Card>
@@ -78,9 +76,8 @@ componentDidMount(){
             <Card.Body>
               <Card.Title>BTC/LTC</Card.Title>
               <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to
-                additional content. This card has even longer content than the first to
-                show that equal height action.
+                Price 0.004145 <hr/>
+                Volumen 1.111.4218
               </Card.Text>
             </Card.Body>
           </Card>
@@ -90,9 +87,8 @@ componentDidMount(){
             <Card.Body>
               <Card.Title>BTC/BCH</Card.Title>
               <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to
-                additional content. This card has even longer content than the first to
-                show that equal height action.
+                Price 0.002145 <hr/>
+                Volumen 4.545.231
               </Card.Text>
             </Card.Body>
           </Card>
@@ -103,4 +99,4 @@ componentDidMount(){
 
 }
 
-export default PriceRow;
+export default priceRow;

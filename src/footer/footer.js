@@ -1,6 +1,6 @@
 
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { MDBCol, MDBContainer,  MDBFooter } from "mdbreact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
@@ -9,13 +9,13 @@ import CardDeck from 'react-bootstrap/CardDeck';
 const Footer = () => {
   return (
 
-    <MDBFooter color="stylish-color-dark" className="page-footer font-small pt-4 mt-4">
-      <MDBContainer fluid className="text-center text-md-left" className="">
+    <MDBFooter color="unique-color-dark" className="page-footer font-small pt-4 mt-4 ">
+      <MDBContainer fluid className="text-center text-md-left">
       <CardDeck>
      
           <MDBCol md="6">
             <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Footer Content
+            <img src="./images/logo.png"alt=""></img>
             </h5>
             <p>
               Here you can use rows and columns here to organize your footer
@@ -27,61 +27,50 @@ const Footer = () => {
           <MDBCol md="2">
           
           <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Links
+         
+            </h5>
+            <ul className="list-unstyled">
+            
+            </ul>
+          </MDBCol>
+          <hr className="clearfix w-100 d-md-none" />
+          <MDBCol md="2">
+            <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
+              Support
             </h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#!">Link 1</a>
+                <a href="#!"></a>
               </li>
               <li>
-                <a href="#!">Link 2</a>
+                <a href="#!"></a>
               </li>
               <li>
-                <a href="#!">Link 3</a>
+                <a href="#!"></a>
               </li>
               <li>
-                <a href="#!">Link 4</a>
+                <a href="#!"></a>
               </li>
             </ul>
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
           <MDBCol md="2">
             <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Links
+              CONTACTS
             </h5>
             <ul className="list-unstyled">
-              <li>
-                <a href="#!">Link 1</a>
-              </li>
-              <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
-              </li>
-            </ul>
-          </MDBCol>
-          <hr className="clearfix w-100 d-md-none" />
-          <MDBCol md="2">
-            <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Links
-            </h5>
-            <ul className="list-unstyled">
-              <li>
-                <a href="#!">Link 1</a>
-              </li>
-              <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
-              </li>
+                <p>
+                  <i className="fa fa-home mr-3" /> Punto Fijo, PF 4102, VE
+                </p>
+                <p>
+                  <i className="fa fa-envelope mr-3" /> Grafits23@gmail.com
+                </p>
+                <p>
+                  <i className="fa fa-phone mr-3" /> + 58 412 750 3349
+                </p>
+                <p>
+                  <i className="fa fa-print mr-3" /> + 58 269 988 2180
+                </p>
             </ul>
             </MDBCol>
           
@@ -121,7 +110,7 @@ const Footer = () => {
       </div>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.tecnoaraguana.org.ve"> Tecnoparaguana.org.ve  </a>
         </MDBContainer>
       </div>
     </MDBFooter>
