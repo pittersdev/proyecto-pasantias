@@ -6,7 +6,7 @@ import Cars from './cars';
 
 const Suport = (props) => {
   return (
-   <div className="">
+   <div>
      <div className ="cars col-lg-8 col-md-6 col-sm-12">
       <Cars/>
      </div>

@@ -18,7 +18,7 @@ const Nav = (props) => {
             <Link className="banner-bottom" to="/">home</Link>
             <Link className="banner-bottom" to="/markets">Markets</Link>
             <Link className="banner-bottom" to="/grafits">Grafits</Link>
-            <Link className="banner-bottom" to="/suport">Suport</Link>
+            <Link className="banner-bottom" to="/suport">News</Link>
           </div>
           <Switch>
             <Route path="/markets" component={MarketsContainer}/>
