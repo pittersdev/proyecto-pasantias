@@ -43,8 +43,8 @@ componentDidMount(){
             <Card.Body>
               <Card.Title>BTC/ETH</Card.Title>
               <Card.Text>
-                price 0.03145 <hr/>
-                volume 7111.4218
+                Price: 0.02145 <hr/>
+                Volume: 4.21.4218
               </Card.Text>
             </Card.Body>
           
@@ -54,8 +54,8 @@ componentDidMount(){
             <Card.Body>
               <Card.Title>BTC/USDT</Card.Title>
               <Card.Text>
-                price 0.03145 <hr/>
-                volumen 7.111.4218
+                Price: $ 9.963.61 <hr/>
+                Volumen: 7.111.4218
               </Card.Text>
             </Card.Body>
            
@@ -65,8 +65,8 @@ componentDidMount(){
             <Card.Body>
               <Card.Title>BTC/XRP</Card.Title>
               <Card.Text>
-                Price 0.0002145 <hr/>
-                Volumen 4.454.675
+                Price: 0.0002145 <hr/>
+                Volumen: 2.454.675
               </Card.Text>
             </Card.Body>
           </Card>
@@ -76,8 +76,8 @@ componentDidMount(){
             <Card.Body>
               <Card.Title>BTC/LTC</Card.Title>
               <Card.Text>
-                Price 0.004145 <hr/>
-                Volumen 1.111.4218
+                Price: 0.004145 <hr/>
+                Volumen: 1.111.4218
               </Card.Text>
             </Card.Body>
           </Card>
@@ -87,8 +87,8 @@ componentDidMount(){
             <Card.Body>
               <Card.Title>BTC/BCH</Card.Title>
               <Card.Text>
-                Price 0.002145 <hr/>
-                Volumen 4.545.231
+                Price: 0.002145 <hr/>
+                Volumen: 4.545.231
               </Card.Text>
             </Card.Body>
           </Card>

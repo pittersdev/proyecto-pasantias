@@ -18,9 +18,9 @@ const Footer = () => {
             <img src="./images/logo.png"alt=""></img>
             </h5>
             <p>
-              Here you can use rows and columns here to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
+            CriptoCoin es un Sistema fácil e intuitivo para principantes, 
+            pero con las prestaciones necesarias para los analistas de bolsa expertos. 
+            CriptoCoin tiene todas las herramientas de gráficos que necesita visualizar ideas.
             </p>
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
@@ -39,18 +39,12 @@ const Footer = () => {
               Support
             </h5>
             <ul className="list-unstyled">
-              <li>
-                <a href="#!"></a>
-              </li>
-              <li>
-                <a href="#!"></a>
-              </li>
-              <li>
-                <a href="#!"></a>
-              </li>
-              <li>
-                <a href="#!"></a>
-              </li>
+            <p>
+                  <i className="fa fa-envelope mr-3" /> CriptoCoin@gmail.com
+                </p>
+                <p>
+                  <i className="fa fa-phone mr-3" /> + 58 414 052 0349
+                </p>
             </ul>
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
@@ -63,7 +57,7 @@ const Footer = () => {
                   <i className="fa fa-home mr-3" /> Punto Fijo, PF 4102, VE
                 </p>
                 <p>
-                  <i className="fa fa-envelope mr-3" /> Grafits23@gmail.com
+                  <i className="fa fa-envelope mr-3" /> Cripto05@gmail.com
                 </p>
                 <p>
                   <i className="fa fa-phone mr-3" /> + 58 412 750 3349

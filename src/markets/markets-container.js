@@ -50,7 +50,7 @@ componentDidMount(){
           
             <Table responsive>
               <thead>
-                <input label ="escribe aqui:" icon="search" onChange={this.onChange}></input>
+               
                 <tr>
                   <th>Pair</th>
                   <th>Last Price</th>
